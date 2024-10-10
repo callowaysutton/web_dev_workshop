@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>History of the Web</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/highlight/monokai.css" />
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <div class="slides">
+            <section data-auto-animate>
+                <h1>Evolution of Web Development</h1>
+                <p>From Static Pages to Dynamic Applications</p>
+                <img data-src="assets/evolution_of_web.jpg" alt="Evolution of Web Technologies">
+            </section>
+
+            <!-- Static Pages -->
+            <section data-auto-animate>
+                <h2>Static Web Pages</h2>
+                <p>Just the header, paragraph, and styling HTML tags</p>
+                <img class="fragment" fragment data-src="assets/first_website.png" alt="Static Web Pages">
+            </section>
+            <section data-auto-animate>
+                <h2>Static Web Pages</h2>
+                <p>A simple web server could be written in a few lines</p>
+                <img class="fragment" data-src="assets/basic_webserver.png" height="50%" alt="Server Side of Things">
+            </section>
+            <section data-auto-animate>
+                <h2>Static Web Pages</h2>
+                <p>Web clients were also very simple, with a lot just rendering HTML through a terminal output</p>
+                <ul>
+                    <li>Lynx/Cello - Command line on DOS/Windows/Linux</li>
+                    <li>W3M/Mosaic - GUI on Mac and Windows</li>
+                </ul>
+                <img class="fragment" data-src="assets/mosaic.png" height="50%" alt="Lynx Browser">
+            </section>
+
+            <!-- Dynamic Websites -->
+            <section data-auto-animate>
+                <h2>Dynamic Web Pages</h2>
+                <p>Static pages are boring though, so some people got to thinking and came up with a way to make websites
+                    more dynamic and interactive. This was the birth of using HTTP headers to
+                    send data to the server and have it generate a new page on the fly.
+                </p>
+                <img data-src="assets/dynamic_web.gif" alt="Dynamic Web Pages">
+
+            </section>
+
+            <section data-auto-animate>
+                <h2>Dynamic Web Pages</h2>
+                <p>Dynamiticity was usually done by using Query Parameters in the URL, setting custom HTTP headers,
+                    and/or sending data in the body of the request via a POST request like when a user submits a form.
+                </p>
+                <p>
+                    Since this became pretty standardized, developers started to create libraries and frameworks to
+                    make this easier. This was the birth of CGI (Common Gateway Interface).
+                </p>
+                <img class="fragment" data-src="assets/cgi_example.png" height="50%" alt="CGI">
+            </section>
+
+            <!-- Interactive and Styled Pages -->
+            <section data-auto-animate>
+               <h2>Interactive Web Pages</h2>
+               <p>Before, HTML was forced into a linear format of either inline or blocked elements.
+                   With the advent of CSS and JavaScript though, developers were able to change the 
+                   ordering and look of elements, as well as the behavior that happens when users
+                   interact with the page.
+               </p>
+                <img class="fragment" data-src="assets/basic_js.png" alt="JavaScript">
+                <img class="fragment" data-src="assets/basic_css.png" alt="CSS">
+            </section>
+
+            <section data-auto-animate>
+                <h2>Interactive Web Pages</h2>
+                <p>This brought about a whole new era of web development with the ability to create
+                    dynamic and interactive web pages.
+                </p>
+            </section>
+
+            <!-- The Age of the Modern Web -->
+            <section data-auto-animate>
+                <h2>The Modern Web</h2>
+                <p>With the advent of AJAX (Asynchronous JavaScript and XML), developers were able to
+                    send and receive data from the server without having to reload the page. This was
+                    a huge step forward in creating more dynamic and interactive web applications.
+                </p>
+
+                <small>AJAX is actually still heavily in use today, 20 years later, believe it or not; it's also noted as THE key reason Gmail became such a success!</small>
+                <img data-src="assets/ajax.png" class="fragment" alt="AJAX">
+            </section>
+
+            <section data-auto-animate>
+                <h2>The Modern Web</h2>
+                <p>Now, in around 2003-2007, load balancing and server-side caching became more popular
+                    as websites started to get more and more traffic. This was the birth of the modern web
+                    and the start of the era of web applications.
+                </p>
+                <p class="fragment">
+                    Infrastructure also started to become more complex, with the introduction of load balancers and reverse proxies.
+                    Spreading your database across multiple regions also became more popular as well as the use of CDNs 
+                    (Content Delivery Networks) to cache and serve static assets.
+                </p>
+                <img data-src="assets/load_balancing.png" class="fragment" alt="Load Balancer">
+            </section>
+
+            <!-- The Advent of Async -->
+            <section data-auto-animate>
+                <h2>The Advent of Asynchronous Programming</h2>
+                <p>With the increasing amount of traffic and infrastructure to deal with, developers started to run into issues with
+                    blocking code. This was the birth of the idea of asynchronous programming, where code could run
+                    in the background and not block the main thread from accepting new requests.
+                </p>
+                <p class="fragment">
+                    Eventually, Node.js was created, which allowed developers to write server-side code in JavaScript
+                    and use the same language on the frontend and backend while being very performant I/O wise compared
+                    to other server-side languages which had lack luster async support.
+                </p>
+            </section>
+            <!-- The Advent of Virtual DOMs -->
+            <section>
+                <h2>The Advent of Virtual DOMs</h2>
+                <p>With the increasing complexity of web applications, the frontend was starting to get complex too; so
+                    developers started to create libraries and frameworks to help manage the complexity. This was the
+                    birth of the idea of the Virtual DOM.
+                </p>
+                <p class="fragment">What it allowed developers to do was to create a virtual representation of the DOM in memory and then
+                    compare it to the actual DOM on the page. If there were any differences, it would only update the
+                    parts that needed to be updated, rather than re-rendering the entire page.
+                </p>
+                <p class="fragment">This  was the birth of frontend libraries like React, Angular, and Vue.</p>
+            </section>
+
+            <!-- Web Development Today -->
+            <section>
+                <h2>Web Development Today</h2>
+                <p>Today, web development is a complex and ever-changing field. With the advent of cloud computing, serverless
+                    architecture, and the increasing complexity of web applications, developers are constantly having to
+                    learn new technologies and paradigms to keep up with the industry.
+                </p>
+                <p class="fragment">You could instantly scale your app to 7 continents using serverless, do machine learning in
+                    the browser using WebAssembly, make a game using WebGPU API or ThreeJS, etc. The field has never been more
+                    exciting and full of possibilities.
+                </p>
+            </section>
+
+            <!-- Ending Slide and Continuation -->
+            <section>
+                <h2>Thank You!</h2>
+                <p>Thank you for listening to my presentation on the Evolution of Web Development. If you have any questions,
+                    feel free to ask!
+                </p>
+                <p class="fragment">
+                    Now we're going to move onto how we can get started with the modern web and some of the tools and technologies
+                    that are popular today.
+                </p>
+            </section>
+
+            <!-- MAKE SURE DOCKER IS INSTALLED -->
+            <section>
+                <h2>Getting Started with Web Development</h2>
+                <p>To get started on the next half of this session, please make sure that you have Docker installed on your
+                    machine. If you don't have it installed, you can download it from <a href="https://www.docker.com/products/docker-desktop">here</a>.
+                </p>
+                <p class="fragment">Once you have Docker installed, you can run the following command to get started:</p>
+            </section>
+
+            <!-- Web Development Section -->
+            <section>
+                <h2>Getting Started with Web Development</h2>
+                <p>Now that we've gone over the history of web development, let's talk about how you can get started with web
+                    development today.
+                </p>
+                <p class="fragment">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/math/math.js"></script>
+    <script>
+        Reveal.initialize({
+            history: true,
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full',
+                TeX: {
+                    Macros: {
+                        R: '\\mathbb{R}',
+                        set: ['\\left\\{#1 \\; ; \\; #2\\right\\}', 2]
+                    }
+                }
+            },
+
+            plugins: [RevealMath]
+        });
+    </script>
+
+</body>
+
+</html>
